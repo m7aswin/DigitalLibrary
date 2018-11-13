@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Student_Master.master.cs" Inherits="Student_Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div background-color: #99CCFF;" 
+        style="height: 106px; background-color: #3366FF;" align="center" 
+       >
+        
+       
+        <p align="center" style="font-family: 'Goudy Stout'; font-size: xx-large">Student Home</p>
+       
+        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+            ForeColor="#284E98" BackColor="#B5C7DE" DynamicHorizontalOffset="2" 
+            Font-Names="Verdana" Font-Size="0.8em" StaticSubMenuIndent="10px">
+            <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicMenuStyle BackColor="#B5C7DE" />
+            <DynamicSelectedStyle BackColor="#507CD1" />
+            <Items>
+                <asp:MenuItem Text="View " Value="View ">
+                    <asp:MenuItem Text="Notes" Value="Notes"></asp:MenuItem>
+                    <asp:MenuItem Text="E-Books" Value="E-Books"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Announcement" Value="Announcement">
+                    <asp:MenuItem Text="Add Teacher" Value="Add Teacher"></asp:MenuItem>
+                    <asp:MenuItem Text="Remove Teacher" Value="Remove Teacher"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Student Management" Value="Student Management">
+                    <asp:MenuItem Text="Add Student" Value="Add Student"></asp:MenuItem>
+                    <asp:MenuItem Text="Remove Student" Value="Remove Student"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Subject Management" Value="Subject Management">
+                    <asp:MenuItem Text="Add Subject" Value="Add Subject"></asp:MenuItem>
+                    <asp:MenuItem Text="Remove Subject" Value="Remove Subject"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="E-Books" Value="E-Books"></asp:MenuItem>
+            </Items>
+            <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <StaticSelectedStyle BackColor="#507CD1" />
+        </asp:Menu>
+        </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <div  background-color: #FF99CC;" style="background-color: #CCFF99" 
+        >
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+    </form>
+</body>
+</html>
